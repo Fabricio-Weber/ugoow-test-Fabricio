@@ -16,7 +16,7 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Index />,
-    errorElement: <h1>Sorry we dontfouned</h1>,
+    errorElement: <h1>Sorry, page not found</h1>,
     children: [
       {
         path: "/dashboard/pedidos",

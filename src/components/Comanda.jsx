@@ -1,8 +1,10 @@
-export function Comanda(){
+
+
+export function Comanda({dataToChild}){
     return(
-        <div className=" border border-solid border-black p-4">
+        <div className=" border border-solid border-black p-4 absolute right-80">
             <div className="w-full h-10 mt-1">
-              <h4 className="font-bold text-3xl">Comanda </h4>
+              <h4 className="font-bold text-3xl">Comanda {dataToChild} </h4>
               <p className="text-sm mb-1">Abertura ##/##/#### ##:##:##</p>
             </div>
 
