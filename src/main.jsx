@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {
-  createBrowserRouter,
-  RouterProvider,
+    createBrowserRouter,
+    RouterProvider,
 } from "react-router-dom";
 import './index.css'
 
@@ -13,30 +13,30 @@ import { PDV } from './pages/pdv';
 
 
 const router = createBrowserRouter([
-  {
-    path: "/dashboard",
-    element: <Index />,
-    errorElement: <h1>Sorry, page not found</h1>,
-    children: [
-      {
-        path: "/dashboard/pedidos",
-        element: <Pedidos />,
-      },
-      {
-        path: "/dashboard/mesas",
-        element: <Mesas />
-      },
-      {
-        path: "/dashboard/pdv",
-        element: <PDV/>
-      }
+    {
+        path: "/dashboard",
+        element: <Index />,
+        errorElement: <h1>Sorry, page not found</h1>,
+        children: [
+            {
+                path: "/dashboard/pedidos",
+                element: <Pedidos />,
+            },
+            {
+                path: "/dashboard/mesas",
+                element: <Mesas />
+            },
+            {
+                path: "/dashboard/pdv",
+                element: <PDV />
+            }
 
-    ]
-  },
+        ]
+    },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <React.StrictMode>
+        <RouterProvider router={router} />
+    </React.StrictMode>
 )
