@@ -1,10 +1,14 @@
+import { useState } from "react"
 
 
-export  function Comanda({id,numero,pedido, valor, data, hora}) {
+export function Comanda({ id, numero, pedido, valor,servico, data, hora }) {
+
+
+
     return (
         <div className=" border border-solid border-black p-4 ">
             <div className="w-full h-10 mt-1">
-                <h4 className="font-bold text-3xl">Comanda {id} </h4>
+                <h4 className="font-bold text-2xl">Comanda  #{pedido}</h4>
                 <p className="text-sm mb-1">Abertura {data} {hora}</p>
             </div>
 
@@ -12,13 +16,14 @@ export  function Comanda({id,numero,pedido, valor, data, hora}) {
                 <div className="flex-row w-full">
                     <p className=" text-xl">Valor Itens:</p>
                     <p className="text-xl">R${valor} </p>
-                    <p className="text-xl">Taxa Serviço: R$ 00</p>
+                    <p className="text-xl">Taxa Serviço: R$ {servico}</p>
                 </div>
 
                 <div>
                     <label className=" text-xl">Desconto R$
                         <input />
                     </label>
+                    <button className="border border-black" >aplicar desconto</button>
                 </div>
 
                 <div>
