@@ -1,12 +1,12 @@
 import { useState } from "react"
 
 
-export function Comanda({ id, numero, pedido, valor,servico, data, hora }) {
+export function Comanda({ id, numero, pedido, valor, servico, data, hora }) {
 
 
 
     return (
-        <div className=" border border-solid border-black p-4 bg-gray-800 text-slate-50 ">
+        <div className="mt-10 w-96 h-auto p-4 bg-gray-800 text-slate-50 ">
             <div className="w-full h-10 mt-1">
                 <h4 className="font-bold text-2xl">Comanda  #{pedido}</h4>
                 <p className="text-sm mb-1">Abertura {data} {hora}</p>
@@ -21,7 +21,7 @@ export function Comanda({ id, numero, pedido, valor,servico, data, hora }) {
 
                 <div>
                     <label >
-                        <input className="placeholder-orange-600" placeholder="Desconto R$" />
+                        <input className="placeholder-orange-600 text-orange-600" placeholder="Desconto R$" />
                     </label>
                     <button className="bg-orange-600 rounded-xl" >aplicar desconto</button>
                 </div>
@@ -29,7 +29,7 @@ export function Comanda({ id, numero, pedido, valor,servico, data, hora }) {
                 <div>
                     <p className="text-xl font-bold">Total: R$ {valor}</p>
                     <label className=" text-xl">Forma de Pagamento</label>
-                    <select className=" text-xl">
+                    <select className=" text-xl  text-orange-600">
                         <option>Dinheiro</option>
                         <option>Credito</option>
                         <option>Débito</option>

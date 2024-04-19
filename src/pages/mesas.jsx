@@ -28,14 +28,14 @@ export function Mesas() {
     })
 
     return (
-        <div className=" w-full h-full">
+        <div className="box-content">
             <div>
-                <div className="flex w-full m-2">
+                <header className="flex w-full m-2">
                     <h1 className="text-4xl font-inter text-slate-800 font-semibold">Mesas e Comandas</h1>
-                </div>
+                </header>
             </div>
 
-            <div className="w-full ml-16 border border-solid content-center flex ">
+            <div className="w-full ml-24 flex-col columns-2">
                 <MesaPedido />
             </div>
 
