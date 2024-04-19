@@ -35,8 +35,8 @@ export function Mesas() {
                 </div>
             </div>
 
-            <div className="w-3/4 border border-solid flex columns-2 border-black p-4">
-                |<MesaPedido />
+            <div className="w-full ml-16 border border-solid content-center flex ">
+                <MesaPedido />
             </div>
 
         </div>

@@ -69,7 +69,7 @@ export function MesaPedido({ numero }) {
     return (
         <div className="flex ">
             {mesas.map(mesa => {
-                return <button className="w-3/4 m-5 h-28 border border-solid border-black hover:bg-red-700 bg-red-500 touch-auto"
+                return <button className="w-3/4 m-5 h-28 rounded-xl hover:bg-orange-700 text-slate-50 bg-orange-600 touch-auto"
                 key={mesa.key} onClick={() =>  setComanda({id: mesa.id, 
                                                            numero: mesa.numero, 
                                                            pedido: mesa.pedido,

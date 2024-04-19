@@ -6,7 +6,7 @@ export function Comanda({ id, numero, pedido, valor,servico, data, hora }) {
 
 
     return (
-        <div className=" border border-solid border-black p-4 ">
+        <div className=" border border-solid border-black p-4 bg-gray-800 text-slate-50 ">
             <div className="w-full h-10 mt-1">
                 <h4 className="font-bold text-2xl">Comanda  #{pedido}</h4>
                 <p className="text-sm mb-1">Abertura {data} {hora}</p>
@@ -20,10 +20,10 @@ export function Comanda({ id, numero, pedido, valor,servico, data, hora }) {
                 </div>
 
                 <div>
-                    <label className=" text-xl">Desconto R$
-                        <input />
+                    <label >
+                        <input className="placeholder-orange-600" placeholder="Desconto R$" />
                     </label>
-                    <button className="border border-black" >aplicar desconto</button>
+                    <button className="bg-orange-600 rounded-xl" >aplicar desconto</button>
                 </div>
 
                 <div>
@@ -38,7 +38,7 @@ export function Comanda({ id, numero, pedido, valor,servico, data, hora }) {
                 </div>
 
                 <div >
-                    <button className="border border-solid border-black text-xl bg-red-600">Fechar Comanda</button>
+                    <button className=" text-xl bg-orange-600 rounded-xl">Fechar Comanda</button>
                 </div>
 
                 <div>
@@ -61,7 +61,7 @@ export function Comanda({ id, numero, pedido, valor,servico, data, hora }) {
                                     </span>
                                 </span>
                             </li>
-                            <button className="border border-solid border-black">Editar</button>
+                            <button className="bg-orange-600 rounded-xl">Editar</button>
                         </span>
                     </ul>
                 </div>
