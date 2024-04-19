@@ -1,1 +1,1 @@
-Criei os componentes mas ainda preciso implementar o useEffect para renderizar os elementos de maneira dinamica
+Quase todos as funcionalidades do Front estão prontas, proximo passo estilizar e integrar com a API para desenvovler o restante das funcionalidades
